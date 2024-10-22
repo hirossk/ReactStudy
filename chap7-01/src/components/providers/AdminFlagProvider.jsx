@@ -5,12 +5,11 @@ export const AdminFlagContext = createContext({});
 export const AdminFlagProvider = (props) => {
   const { children } = props;
 
-  // 管理者フラグ
-  const [isAdmin, setIsAdmin] = useState(false);
+  const sampleObj = { sampleValue: "テスト" };
 
   // ContextオブジェクトとしてisAdminとsetIsAdminを設定(オブジェクトの省略記法)
   return (
-    <AdminFlagContext.Provider value={{ isAdmin, setIsAdmin }}>
+    <AdminFlagContext.Provider value={sampleObj}>
       {children}
     </AdminFlagContext.Provider>
   );

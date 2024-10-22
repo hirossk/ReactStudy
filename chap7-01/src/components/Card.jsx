@@ -12,12 +12,12 @@ const style = {
   alignItems: "center",
 };
 
-// シンプルになった!
-export const Card = () => {
+export const Card = (props) => {
+  const { isAdmin } = props;
   return (
     <div style={style}>
       <p>山田太郎</p>
-      <EditButton />
+      <EditButton isAdmin={isAdmin} />
     </div>
   );
 };
