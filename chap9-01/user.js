@@ -9,9 +9,9 @@ const PORT = 3333;
 
 // ダミーデータ
 const users = [
-  { id: 1, name: "Alice", age: 25, hobbies: ["reading", "swimming", "coding"] ,personalColor: "blue"},
-  { id: 2, name: "Bob", age: 30 },
-  { id: 3, name: "Charlie", age: 35, hobbies: ["gaming", "traveling", "photography"] },
+  { id: 1, firstname: "Alice", lastname: "Johnson",  age: 25, hobbies: ["reading", "swimming", "coding"] ,personalColor: "blue"},
+  { id: 2, firstname: "Bob", lastname: "Brown",age: 30 },
+  { id: 3, firstname: "Charlie", lastname: "Wilson",age: 35, hobbies: ["gaming", "traveling", "photography"] },
 ];
 
 // /users エンドポイント
